@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "agent-lab"
+version = "0.1.0"
+description = "Evolutionary program synthesis from scratch"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+plot = ["matplotlib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
